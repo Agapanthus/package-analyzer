@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+    service_webserver:
+        build:
+            context: "."
+            dockerfile: ./server.dockerfile
+        ports:
+          - "3000:3000"
+        networks:
+            - julia_network
+        working_dir: /analyzer/src/visualization
+
+networks:
+    julia_network:
+        driver: bridge

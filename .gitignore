@@ -1,0 +1,4 @@
+.vscode/
+build
+res.json
+testlog.xml
